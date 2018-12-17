@@ -55,6 +55,7 @@
     <Compile Include="Entities\RoleMenu.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\UserRole.cs" />
+    <Compile Include="Mappings\RoleMapping.cs" />
     <Compile Include="Mappings\UserMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
