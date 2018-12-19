@@ -162,6 +162,16 @@
     <Folder Include="Areas\Manager\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CMS.Infrastructure\CMS.Infrastructure.csproj">
+      <Project>{cc86bfb6-9325-4d13-8ef1-b7a55bdd59f1}</Project>
+      <Name>CMS.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.Services\CMS.Services.csproj">
+      <Project>{53197503-2e9a-4543-8bc5-d5512e45b131}</Project>
+      <Name>CMS.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

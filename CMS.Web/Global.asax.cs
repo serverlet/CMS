@@ -15,6 +15,8 @@ namespace CMS.Web
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+
+            Infrastructure.Logger.Log.Info("程序启动...");
         }
     }
 }
