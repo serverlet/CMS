@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CMS.Data.Entities;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
 using System.Linq;
@@ -7,10 +8,11 @@ using System.Threading.Tasks;
 
 namespace CMS.Data.Mappings
 {
-    public class UserRoleMapping : EntityTypeConfiguration<Entities.UserRole>
+    public class UserRoleMapping : EntityTypeConfiguration<UserRole>
     {
         public UserRoleMapping()
         {
+            this.ToTable($"Sys{nameof(UserRole)}");
             this.HasKey(_ => _.UserRoleId);
         }
     }
